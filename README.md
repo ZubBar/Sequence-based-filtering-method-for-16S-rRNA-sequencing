@@ -45,7 +45,7 @@ Pipeline contributors: Cristina Zubiria Barrera, Dr. Magdalena Stock and Dr. Til
 --> At this point you have picked the most representative sequences assigned to the X largest clusters of your blank control(s).
 	
 
-# 4.  Next, obtain all reads from these representative sequences in these X clusters.
+# 4.  Obtain all reads from these representative sequences in these X clusters.
 
 	grep -Ff $PWD/Blank_Xlargestclusters.txt_IDs.txt $PWD/otus_Blank.only_uclust_99/Blank_seqs_otus.txt | awk '$1=" "' |awk 'BEGIN {OFS="\n"}{$1=$1;print}' 	>$PWD/Blank_Xlargestclusters_readsIDs.txt
 
