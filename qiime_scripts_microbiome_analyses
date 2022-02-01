@@ -82,7 +82,7 @@ compare_categories.py
 	--method "choose your statistical test:permanova/anosim/adonis/permdisp/db-RDA...see http://qiime.org/scripts/compare_categories.html)
 	-o $PWD/statistic
 	
-(suggestion: perform permdisp statistical test before premanova to test for group dispersion homogeneity)
+(suggestion: perform permdisp statistical test before permanova to test for group dispersion homogeneity)
 
 5. Compare OTU frequencies across sample groups (statistical test eg.: kruskal wallis)
 
@@ -114,3 +114,6 @@ for i in `seq 0 99`; do python SparCC.py simulated/permuted_$i -c boot_corr/simu
 python PseudoPvals.py sparcc_cor.txt boot_corr/simulated_sparcc_#.txt 100 -o $PWD/pvalues/one_sided.txt -t one_sided (or two_sided)
 
 For more detailed information about these calculations referred to "Friedman, J., & Alm, E. J. (2012). Inferring correlation networks from genomic survey data."
+
+--> Replace $PWD with your path
+--> Give your option wherever you find ""
